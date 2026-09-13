@@ -10,8 +10,8 @@
 #include "control_servo.h"
 
 //wifi-credentials
-const char* ssid="FiveBroadband-2.4G";
-const char* password="Ahmad@110";
+const char* ssid="xyz-2.4G";
+const char* password="*******";
 
 //http sever handle
 static httpd_handle_t server_stream=NULL;
