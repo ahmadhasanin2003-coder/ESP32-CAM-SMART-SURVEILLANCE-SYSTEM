@@ -20,6 +20,18 @@ Hardware Used
 
 System Architecture
 
+Camera
+   |
+   v
+ESP32-CAM <------> Web Interface (Browser)
+   |                     |
+   |                     |
+   v                     v
+SD Card             OpenCV Processing
+   |
+   v
+Servo Motor Control
+
 
 Working Principle
 
