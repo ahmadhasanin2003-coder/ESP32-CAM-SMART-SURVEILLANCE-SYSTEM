@@ -1,0 +1,90 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-black: #0d0d0d;
+  --color-dark-gray: #1a1a1a;
+  --color-deep-brown: #3e2723;
+  --color-gold: #d4af37;
+  --color-gold-light: #f3e5ab;
+  --color-champagne: #f7e7ce;
+  --color-cream: #fffdd0;
+  --color-white: #ffffff;}
+body{
+    background-color: antiquewhite;
+  }
+#wrapper{
+border: 3px solid red;
+display: flex;
+height: 700px;
+margin: 10px;
+
+}
+#wrapper img{
+    width: 70%;
+    
+}
+#panel{
+    width: 30%;
+    border: 3px solid var(--color-deep-brown);
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 10px;
+}
+#panel #capture{
+
+  display: inline-block;        /* flex helps center the image */
+  text-align: center;
+ 
+  padding: 10px;
+  cursor: pointer;  
+  font-size: 5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#panel #control{
+    
+    display: flex;
+    justify-content: space-around;
+}
+#panel #control #left{
+    all: unset;
+  display: inline-block;        /* flex helps center the image */
+  text-align: center;
+  
+  padding: 10px;
+  cursor: pointer;  
+  width: 40%;
+  height: 100px;           /* make it look clickable */
+  
+  
+}
+#panel #control #right{
+    all: unset;
+    display: inline-block;        /* flex helps center the image */
+    
+    text-align: center;
+
+
+  padding: 10px;
+  cursor: pointer;             /* make it look clickable */
+  width: 40%;
+  height: 100px;
+
+
+}
+#panel #control #left img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+#panel #control #right img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
