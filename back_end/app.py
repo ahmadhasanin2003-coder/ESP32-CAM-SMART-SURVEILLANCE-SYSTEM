@@ -4,7 +4,7 @@ import numpy as np
 import os
 def resize(capture,width,height):
     return cv.resize(capture,(width,height),interpolation=cv.INTER_LINEAR)
-cam=cv.VideoCapture('http://192.168.1.34:81/Stream')
+cam=cv.VideoCapture('http://192.168.1.xx:xx/Stream')
 def processed_frames():
     i=0
     old_frame=None
